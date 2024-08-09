@@ -4,6 +4,7 @@ const resultado = document.getElementById("resultado");
 const banana = document.getElementById("banana");
 const coco = document.getElementById("coco")
 const btnR = document.getElementById ("reload")
+const btnN = document.getElementById("newG")
 
 
 //localStorage
@@ -115,5 +116,9 @@ if (divs[0].textContent === "🥥" && divs[1].textContent === "🥥" && divs[2].
 })}
 
 btnR.addEventListener("click", function () {
+    location.reload()
+})
+btnN.addEventListener("click", function () {
+    localStorage.clear()
     location.reload()
 })
